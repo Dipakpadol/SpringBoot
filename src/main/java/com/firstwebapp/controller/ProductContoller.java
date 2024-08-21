@@ -17,7 +17,11 @@ public class ProductContoller {
 
 	@GetMapping("/productDetails")
 	private List<Product> getProducts() {
-		List<Product> productLists = productService.getProducts();
-		return productLists;
+		return productService.getProducts();
 	}
+	
+//	@GetMapping("/productDetails/{}")
+//	private Product getProductById(int productId) {
+//		return productService.getProductById(productId);
+//	}
 }
